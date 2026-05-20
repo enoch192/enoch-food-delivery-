@@ -1,0 +1,14 @@
+{
+  "name": "enoch-food-delivery",
+  "version": "1.0.0",
+  "description": "Full Stack Food Delivery App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

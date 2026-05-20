@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENOCH Food Delivery</title>
+    <link rel="stylesheet" href="stayle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Enoch 🍕</h1>
+      <div class="cart-icon">Cart (<span id="cart-count">0</span>)</div>
+    </header>
+
+    <main>
+      <section class="menu-container">
+        <h2>Our Menu</h2>
+        <!-- The JS will now inject categories here -->
+        <div id="food-menu"></div>
+      </section>
+
+      <aside class="cart-container">
+        <h2>Your Order</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">
+          <strong>Total: ETB <span id="total-price">0.00</span></strong>
+        </div>
+
+        <div
+          class="payment-section"
+          style="
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+          "
+        >
+          <h4>Payment Method</h4>
+          <select
+            id="payment-method"
+            style="width: 100%; padding: 8px; margin-bottom: 10px"
+          >
+            <option value="telebirr">Telebirr</option>
+            <option value="cbe_birr">CBE Birr</option>
+            <option value="ebirr">e-Birr</option>
+          </select>
+          <input
+            type="tel"
+            id="phone-number"
+            placeholder="+251_ _ _ _ _ _ _ _ "
+            style="width: 92%; padding: 8px; margin-bottom: 10px"
+          />
+        </div>
+
+        <button
+          id="checkout-btn"
+          class="btn-checkout"
+          onclick="processCheckout()"
+        >
+          Pay & Order
+        </button>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-# ENOCH Food Delivery Application 🍕
+# ENOCH Food Delivery 🍕
 
 A full-stack web application designed for browsing local Ethiopian culinary menus, managing a dynamic shopping cart, and processing digital checkouts. Built with a decoupled architecture, this project integrates a vanilla JavaScript frontend client with a Node.js/Express API backend and a persistent MySQL database via Sequelize ORM.
 
